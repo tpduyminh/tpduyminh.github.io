@@ -2,182 +2,165 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tên Bạn | SEO Specialist Portfolio</title>
-<meta name="description" content="Portfolio SEO: tư duy logic, hành động bằng data.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trần Phạm Duy Minh | Digital Marketing · Portfolio</title>
+<meta name="description" content="Portfolio của sinh viên Marketing đang tìm vị trí thực tập SEO / Content.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fffdf8;--card:#fff;--ink:#16130f;--mute:#6b645a;--line:#ece6da;--acc:#f5a400;--acc-d:#c27f00;--acc-bg:#fff4d6;--nav:#16130f}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#14120e;--card:#1d1a15;--ink:#f6f1e7;--mute:#a79f90;--line:#2e2a22;--acc-bg:#2c2410;--nav:#f6f1e7}}
-:root[data-theme=dark]{--bg:#14120e;--card:#1d1a15;--ink:#f6f1e7;--mute:#a79f90;--line:#2e2a22;--acc-bg:#2c2410;--nav:#f6f1e7}
+:root{--bg:#f6f8f7;--card:#fff;--ink:#14231f;--mute:#56655f;--line:#dde6e2;--pri:#0f766e;--pri-ink:#fff;--soft:#dff3ee;--mark:#f3e76b;--r:16px}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1715;--card:#15221f;--ink:#eaf4f1;--mute:#9db1aa;--line:#24362f;--pri:#3fc1b0;--pri-ink:#07211d;--soft:#16302b;--mark:#7a6f1a}}
+:root[data-theme=dark]{--bg:#0e1715;--card:#15221f;--ink:#eaf4f1;--mute:#9db1aa;--line:#24362f;--pri:#3fc1b0;--pri-ink:#07211d;--soft:#16302b;--mark:#7a6f1a}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{background:var(--bg);color:var(--ink);font:400 16px/1.65 'Be Vietnam Pro',system-ui,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:76px;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.7 'Be Vietnam Pro',system-ui,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 a{color:inherit;text-decoration:none}
-:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-section{padding:88px 0}
-h2{font-size:clamp(30px,5vw,46px);line-height:1.15;font-weight:800;letter-spacing:-.02em;max-width:720px}
-h2 em{font-style:normal;color:var(--acc)}
-.tag{display:inline-block;font-size:12px;font-weight:700;color:var(--acc-d);margin-bottom:12px}
-.lead{color:var(--mute);max-width:640px;margin-top:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
-.btn{display:inline-flex;gap:8px;align-items:center;font-weight:700;font-size:14px;padding:13px 22px;border-radius:999px;border:1.5px solid var(--ink);transition:.2s}
-.btn.pri{background:var(--acc);border-color:var(--acc);color:#16130f}
+:focus-visible{outline:3px solid var(--pri);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15;letter-spacing:-.015em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}
+h2{font-size:clamp(28px,4.4vw,38px);font-weight:800;margin-bottom:8px}
+.lead{color:var(--mute);max-width:600px;margin-bottom:30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:12px 22px;border-radius:12px;border:1.5px solid var(--ink);transition:transform .15s}
+.btn.pri{background:var(--pri);border-color:var(--pri);color:var(--pri-ink)}
 .btn:hover{transform:translateY(-2px)}
-/* nav */
-nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:20;background:var(--nav);color:var(--bg);border-radius:999px;padding:8px 10px 8px 22px;display:flex;gap:22px;align-items:center;font-size:13px;font-weight:600;max-width:calc(100% - 24px)}
-nav b{font-weight:800}
-nav .links{display:flex;gap:18px;overflow-x:auto;scrollbar-width:none}
-nav .links a{opacity:.75;white-space:nowrap}nav .links a:hover{opacity:1}
-nav button{background:var(--acc);border:0;border-radius:999px;padding:6px 12px;font:700 12px inherit;font-family:inherit;cursor:pointer}
+mark{background:linear-gradient(transparent 58%,var(--mark) 58%);color:inherit}
+/* top bar */
+header.bar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.bar b{font:800 18px 'Bricolage Grotesque'}
+.bar nav{display:flex;gap:22px;font-size:14px;font-weight:500;color:var(--mute)}
+.bar nav a:hover{color:var(--ink)}
+.bar .r{display:flex;gap:10px;align-items:center}
+.icon{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-size:16px}
 /* hero */
-.hero{padding-top:130px}
-.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center}
-.badge{display:inline-block;background:var(--acc-bg);color:var(--acc-d);border-radius:999px;padding:5px 14px;font-size:12px;font-weight:700}
-.name{font:400 clamp(60px,11vw,120px)/.95 'Anton',sans-serif;margin:14px 0 10px;text-transform:uppercase}
-.name small{display:block;font-size:.4em;letter-spacing:.04em}
-.name mark{background:none;color:var(--acc)}
-.sub{font-size:20px;font-weight:700}
-.sub mark{background:var(--acc);color:#16130f;padding:0 8px;border-radius:6px}
-.quote{color:var(--mute);border-left:3px solid var(--acc);padding-left:14px;margin:18px 0;max-width:520px;font-style:italic}
-.stats{display:flex;gap:30px;flex-wrap:wrap;margin:22px 0}
-.stats strong{display:block;font:400 44px/1 'Anton',sans-serif;color:var(--acc)}
-.stats span{font-size:12px;color:var(--mute);font-weight:600}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.photo{aspect-ratio:4/5;border-radius:22px;background:linear-gradient(160deg,#2a2216,#0f0d0a);display:grid;place-items:center;color:var(--acc);font:400 120px 'Anton';position:relative;overflow:hidden}
+.hero{padding:64px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:44px;align-items:center}
+.status{display:inline-flex;gap:8px;align-items:center;background:var(--soft);color:var(--pri);font-weight:600;font-size:13px;padding:6px 14px;border-radius:999px}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--pri);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.hero h1{font-size:clamp(36px,6.4vw,62px);font-weight:800;margin:18px 0 16px}
+.hero p.sum{font-size:18px;color:var(--mute);max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.facts{display:grid;gap:10px;margin-top:30px;font-size:14px;color:var(--mute);max-width:520px;grid-template-columns:1fr 1fr}
+.facts b{display:block;color:var(--ink);font-size:15px}
+.photo{aspect-ratio:1/1;border-radius:28px;background:linear-gradient(150deg,var(--pri),#134e4a);display:grid;place-items:center;color:#fff;font:800 96px 'Bricolage Grotesque';position:relative;overflow:hidden;max-width:380px;justify-self:center;width:100%}
 .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-/* about */
-.about{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;margin-top:30px}
-.about h3{font-size:14px}.about li{font-size:14px;color:var(--mute);margin:6px 0 0 18px}
-.certs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:26px}
-.cert .ph{height:160px;border-radius:12px;background:var(--acc-bg);display:grid;place-items:center;color:var(--acc-d);font-weight:700;font-size:13px;margin-top:14px}
-/* cases */
-.case{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;margin-top:26px}
-.case .meta{font-size:11px;font-weight:700;color:var(--acc-d)}
-.case h3{font-size:22px;line-height:1.3;margin:6px 0 10px}
-.case p{color:var(--mute);font-size:14px}
-.case a{color:var(--acc-d);font-weight:700;font-size:13px;display:inline-block;margin-top:12px}
-.shot{border:1px solid var(--line);border-radius:12px;min-height:200px;background:repeating-linear-gradient(135deg,var(--acc-bg) 0 12px,transparent 12px 24px);display:grid;place-items:center;font-size:12px;color:var(--mute)}
-.kpis{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-top:1px solid var(--line);padding-top:20px;text-align:center}
-.kpis strong{display:block;font:400 34px 'Anton';}.kpis span{font-size:12px;color:var(--mute)}
-/* grids */
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
-.grid2 h3{margin:10px 0 6px;font-size:18px}.grid2 p{font-size:14px;color:var(--mute)}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.chips i{font-style:normal;font-size:11px;font-weight:600;background:var(--acc-bg);color:var(--acc-d);padding:3px 10px;border-radius:999px}
-.num{font:400 40px 'Anton';color:var(--line)}
-/* timeline */
-.job{margin-top:22px}
-.job .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.job h3{font-size:18px}.job .co{color:var(--acc-d);font-size:12px;font-weight:700}
-.job .date{font-size:12px;color:var(--mute);font-weight:600}
-.job ul{margin:14px 0 0 18px;color:var(--mute);font-size:14px}.job li{margin-top:6px}
-/* stack */
-.stack{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
-.stack span{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:16px 24px;font-weight:700}
-/* footer */
-.thanks{text-align:center;font:400 clamp(70px,16vw,180px)/1 'Anton';color:var(--acc);padding:40px 0 0}
-.end{background:#16130f;color:#f6f1e7;text-align:center;border-radius:28px 28px 0 0;padding:70px 24px 40px}
-.end h2{margin:0 auto;color:#f6f1e7}.end p{color:#a79f90;max-width:480px;margin:14px auto 24px}
-.end .cta{justify-content:center}.end .btn{border-color:#f6f1e7}.end .btn.pri{border-color:var(--acc)}
-.end small{display:block;margin-top:50px;color:#7c7466;font-size:12px}
-@media(max-width:820px){.hero .wrap,.about,.certs,.case,.grid2{grid-template-columns:1fr}.photo{max-width:340px}section{padding:64px 0}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+/* about + skills */
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+.two p+p{margin-top:12px}
+.skill{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.skill:last-child{border:0}
+.lv{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--soft);color:var(--pri);white-space:nowrap}
+.lv.l1{background:transparent;border:1px solid var(--line);color:var(--mute)}
+/* projects */
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.proj article{display:flex;flex-direction:column;gap:12px}
+.proj .type{font-size:12px;font-weight:600;color:var(--pri)}
+.proj h3{font-size:21px}
+.proj dl{font-size:14px;color:var(--mute)}
+.proj dt{font-weight:600;color:var(--ink);margin-top:8px}
+.proj dd{margin:0}
+.proj .link{margin-top:auto;font-weight:600;color:var(--pri);font-size:14px}
+.shot{height:130px;border-radius:12px;background:repeating-linear-gradient(135deg,var(--soft) 0 12px,transparent 12px 24px);display:grid;place-items:center;font-size:12px;color:var(--mute)}
+/* timeline (real sequence) */
+.tl{position:relative;padding-left:26px;border-left:2px solid var(--line);display:grid;gap:22px}
+.tl>div{position:relative}
+.tl>div::before{content:"";position:absolute;left:-34px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--pri);border:3px solid var(--bg)}
+.tl .d{font-size:13px;color:var(--pri);font-weight:600}
+.tl h3{font-size:18px;margin:2px 0}
+.tl p{font-size:14px;color:var(--mute);max-width:640px}
+/* learning */
+.learn{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.learn .card{padding:18px}
+.learn h3{font-size:16px;margin-bottom:4px}
+.learn p{font-size:14px;color:var(--mute)}
+.bar2{height:6px;border-radius:6px;background:var(--line);margin-top:12px;overflow:hidden}
+.bar2 i{display:block;height:100%;background:var(--pri)}
+/* contact */
+.contact{background:var(--pri);color:var(--pri-ink);border-radius:28px;padding:48px 28px;text-align:center;margin-bottom:40px}
+.contact h2{margin:0 auto 10px;max-width:560px}
+.contact p{max-width:480px;margin:0 auto 24px;opacity:.9}
+.contact .cta{justify-content:center;margin:0}
+.contact .btn{border-color:var(--pri-ink);color:var(--pri-ink)}
+.contact .btn.pri{background:var(--pri-ink);color:var(--pri)}
+footer{text-align:center;color:var(--mute);font-size:13px;padding:0 0 36px}
+@media(max-width:800px){.hero .wrap,.two{grid-template-columns:1fr}.bar nav{display:none}.hero{padding-top:36px}section{padding:52px 0}.photo{max-width:260px;justify-self:start}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<nav aria-label="Điều hướng chính">
-  <b>Tên Bạn</b>
-  <div class="links"><a href="#ve-toi">Về tôi</a><a href="#case">Case Studies</a><a href="#ai">Automation</a><a href="#process">Tư duy</a><a href="#kinh-nghiem">Kinh nghiệm</a><a href="#lien-he">Liên hệ</a></div>
-  <button id="theme" aria-label="Đổi giao diện sáng/tối">Sáng/Tối</button>
-</nav>
-
-<header class="hero"><div class="wrap">
-  <div>
-    <span class="badge">SEO Specialist · Content Strategy</span>
-    <h1 class="name"><small>Nguyễn Văn</small>An <mark>Bình</mark></h1>
-    <p class="sub">Tôi tối ưu hóa <mark>thuật toán Google</mark></p>
-    <p class="quote">“SEO không chỉ là về các thuật toán, mà là về việc hiểu người tìm kiếm và dẫn dắt họ trong ý nguyện tìm kiếm của mình.”</p>
-    <div class="stats">
-      <div><strong>3+</strong><span>Năm kinh nghiệm</span></div>
-      <div><strong>+5,000%</strong><span>Tăng trưởng traffic</span></div>
-      <div><strong>5+</strong><span>Dự án thực chiến</span></div>
-    </div>
-    <div class="cta"><a class="btn pri" href="#case">Case Studies</a><a class="btn" href="#ai">AI Workflows</a></div>
-  </div>
-  <div class="photo" role="img" aria-label="Ảnh chân dung">AB<!-- Thay bằng: <img src="photo.jpg" alt="Tên Bạn"> --></div>
+<header class="bar"><div class="wrap">
+  <b>Văn An</b>
+  <nav aria-label="Điều hướng chính"><a href="#gioi-thieu">Giới thiệu</a><a href="#du-an">Dự án</a><a href="#hoc-van">Học tập &amp; hoạt động</a><a href="#dang-hoc">Đang học</a></nav>
+  <div class="r"><button class="icon" id="theme" aria-label="Đổi giao diện sáng/tối">◐</button><a class="btn pri" href="#lien-he" style="padding:9px 16px">Liên hệ</a></div>
 </div></header>
 
-<section id="ve-toi"><div class="wrap">
-  <span class="tag">Về tôi</span>
-  <h2>Tư duy Logic. Hành động <em>bằng Data.</em></h2>
-  <div class="about">
-    <p class="lead" style="margin:0">Xuất phát điểm là một Content Marketer, tôi tiếp cận SEO không chỉ như một công cụ kéo traffic, mà như một hệ thống tăng trưởng doanh thu. Hơn 3 năm kinh nghiệm thực chiến tại SEO Agency, tôi tập trung vào xây dựng Topical Authority và tối ưu Entity để chuyển đổi dữ liệu thành quyết định kinh doanh.</p>
-    <div class="card"><h3>Học vấn</h3><ul><li>Đại học Kinh tế · Marketing (2019–2023)</li><li>GPA 3.4 / 4.0</li><li>Thành viên CLB Truyền thông</li></ul></div>
+<main>
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="status">Đang tìm thực tập SEO / Content từ 01/2027</span>
+    <h1>Mình là Trần Phạm Duy Minh, sinh viên Digital Marketing <mark>thích biến dữ liệu thành nội dung hữu ích.</mark></h1>
+    <p class="sum">Mình chưa có nhiều năm kinh nghiệm, nhưng đã tự làm vài dự án thật, học đều mỗi tuần và sẵn sàng làm việc chăm chỉ để học nhanh trong môi trường thực tế.</p>
+    <div class="cta"><a class="btn pri" href="#du-an">Xem dự án của mình</a><a class="btn" href="cv.pdf" download>Tải CV (PDF)</a></div>
+    <div class="facts"><div><b>Đại học Kinh tế</b>Marketing, năm 3 (dự kiến tốt nghiệp 2027)</div><div><b>Ho Chi Minh City</b>Làm việc hybrid hoặc từ xa</div></div>
   </div>
-  <div class="certs">
-    <div class="card cert"><h3>Chứng chỉ chuyên môn</h3><ul style="margin:8px 0 0 18px;font-size:14px;color:var(--mute)"><li>Fundamentals of Digital Marketing (Google)</li><li>Google Analytics 4 Certification</li></ul><div class="ph">Ảnh chứng chỉ</div></div>
-    <div class="card cert"><h3>Giải thưởng chiến dịch</h3><ul style="margin:8px 0 0 18px;font-size:14px;color:var(--mute)"><li>Giấy khen Top 10 cuộc thi SEO sinh viên</li></ul><div class="ph">Ảnh giấy khen</div></div>
+  <div class="photo" role="img" aria-label="Ảnh chân dung">AN<!-- Thay bằng: <img src="photo.jpg" alt="Nguyễn Văn An"> --></div>
+</div></div>
+
+<section id="gioi-thieu"><div class="wrap two">
+  <div>
+    <h2>Mình là ai?</h2>
+    <p class="lead" style="margin-bottom:14px">Một người tò mò về cách mọi người tìm kiếm trên Google.</p>
+    <p>Mình bắt đầu với SEO từ năm 2 khi tự làm blog về chủ đề mình thích. Từ đó mình mê việc tìm hiểu vì sao một bài viết lên top còn bài khác thì không.</p>
+    <p>Mình học nhanh, chịu khó đọc tài liệu, và luôn ghi lại những gì đã thử để rút kinh nghiệm. Mình muốn tìm một nơi có người hướng dẫn để mình làm thật và lớn lên cùng đội nhóm.</p>
   </div>
+  <div class="card"><h3 style="margin-bottom:8px">Kỹ năng hiện tại</h3><div id="skills"></div></div>
 </div></section>
 
-<section id="case" style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap">
-  <span class="tag">Dự án nổi bật</span>
-  <h2>Từ chiến lược đến <em>tăng trưởng thực tế.</em></h2>
-  <p class="lead">Khám phá cách tôi xây dựng lộ trình SEO và mang lại tăng trưởng bền vững cho khách hàng.</p>
-  <div id="cases"></div>
+<section id="du-an" style="padding-top:20px"><div class="wrap">
+  <h2>Dự án mình đã làm</h2>
+  <p class="lead">Đây là các dự án cá nhân và bài tập nhóm. Mình ghi rõ phần mình làm và những gì học được.</p>
+  <div class="proj" id="projects"></div>
 </div></section>
 
-<section id="ai"><div class="wrap">
-  <span class="tag">Tôi ứng dụng AI</span>
-  <h2>Hệ thống AI &amp; <em>Automation.</em></h2>
-  <p class="lead">AI làm phần việc lặp lại, con người giữ vai trò phân tích và quyết định.</p>
-  <div class="grid2">
-    <div class="card"><h3>AI-Assisted Analysis</h3><p>Dùng ChatGPT, Gemini, Claude để phân cụm keyword, tìm content gap và tóm tắt SERP với quy trình kiểm duyệt bởi con người.</p><div class="chips"><i>Keyword Clustering</i><i>Prompt Engineering</i><i>Human-in-the-loop</i></div></div>
-    <div class="card"><h3>Automated Syndication</h3><p>Tự động hóa phân phối nội dung đa kênh bằng n8n/Make, giúp giảm 80% thời gian xuất bản mà vẫn giữ chất lượng.</p><div class="chips"><i>n8n</i><i>Make</i><i>REST API</i></div></div>
-  </div>
+<section id="hoc-van"><div class="wrap two">
+  <div><h2>Học tập &amp; hoạt động</h2><p class="lead">Những cột mốc đã giúp mình hình thành kỹ năng.</p></div>
+  <div class="tl" id="timeline"></div>
 </div></section>
 
-<section id="process" style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap">
-  <span class="tag">Cách tôi làm việc</span>
-  <h2>Process, <em>không phải</em> checklist.</h2>
-  <div class="grid2" id="steps"></div>
+<section id="dang-hoc" style="padding-top:20px"><div class="wrap">
+  <h2>Mình đang học gì?</h2>
+  <p class="lead">Kế hoạch học tập hiện tại và tiến độ mình tự đánh giá.</p>
+  <div class="learn" id="learn"></div>
 </div></section>
 
-<section id="kinh-nghiem"><div class="wrap">
-  <span class="tag">Quá trình làm việc</span>
-  <h2>Kinh nghiệm <em>thực chiến.</em></h2>
-  <div class="card job"><div class="row"><div><h3>SEO Executive</h3><div class="co">CÔNG TY ABC</div></div><div class="date">11/2025 – Hiện tại</div></div>
-    <ul><li><b>Hoạch định chiến lược SEO tổng thể:</b> phân tích thị trường, đối thủ và lộ trình tăng trưởng 12 tháng.</li><li><b>Technical SEO:</b> audit crawl, tối ưu Core Web Vitals, schema và internal link.</li><li><b>Content Strategy:</b> xây dựng Topical Map và kiểm soát chất lượng content cùng đội ngũ.</li></ul></div>
-  <div class="card job"><div class="row"><div><h3>CTV Content</h3><div class="co">DỰ ÁN XYZ</div></div><div class="date">02/2023 – 05/2023</div></div>
-    <ul><li>Sản xuất 10+ bài viết/tháng chuẩn SEO, tăng traffic tự nhiên 40% sau 3 tháng.</li></ul></div>
-  <span class="tag" style="margin-top:50px">Công cụ &amp; nền tảng</span>
-  <h2>Tech Stack <em>của tôi.</em></h2>
-  <div class="stack"><span>Ahrefs</span><span>Semrush</span><span>Google Search Console</span><span>GA4</span><span>Looker Studio</span><span>Screaming Frog</span><span>WordPress</span><span>n8n</span></div>
-</div></section>
-
-<div class="thanks" aria-hidden="true">THANKS</div>
-<footer class="end" id="lien-he">
-  <h2>Sẵn sàng cho những mục tiêu mới?</h2>
-  <p>Hãy cùng trao đổi để biến mục tiêu tăng trưởng thành lộ trình cụ thể.</p>
-  <div class="cta"><a class="btn pri" href="mailto:you@example.com">Gửi email cho tôi</a><a class="btn" href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">Kết nối LinkedIn</a></div>
-  <small>© 2026 Tên Bạn. Hosted on GitHub Pages.</small>
-</footer>
+<div class="wrap" id="lien-he"><div class="contact">
+  <h2>Nếu bạn đang cần một bạn thực tập chịu học, hãy nói chuyện với mình nhé.</h2>
+  <p>Mình trả lời email trong vòng 24 giờ và sẵn sàng làm bài test nhỏ.</p>
+  <div class="cta"><a class="btn pri" href="mailto:you@example.com">you@example.com</a><a class="btn" href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a></div>
+</div></div>
+</main>
+<footer>© 2026 Nguyễn Văn An · Xây dựng trên GitHub Pages</footer>
 
 <script>
-const cases=[
- {m:"Ngành Tattoo · Thị trường Mỹ",t:"Dominate thị trường ngách Tattoo tại Mỹ với Semantic SEO",d:"Xây dựng Topical Authority và tối ưu Entity để vượt đối thủ lớn trong 9 tháng.",k:[["+8,269%","Organic Traffic"],["108,800","Traffic / tháng"],["1,500+","Từ khóa Top"]]},
- {m:"B2B Global · Zero-Base",t:"Chiến lược Zero-Base Setup &amp; Phủ Topical Map ngành B2B",d:"Khởi tạo website từ con số 0, lập bản đồ chủ đề và triển khai content theo cụm.",k:[["100%","Tài liệu lập Entity"],["32%","Keyword Top 3"],["2,500+","Sessions / tháng"]]},
- {m:"Nội thất",t:"Housedesign: Chiến lược SEO “Công – Thủ” &amp; bứt phá 44.000 traffic",d:"Cân bằng giữa phòng thủ (fix cannibalization, technical) và tấn công (content mới).",k:[["44,000","Organic / tháng"],["85%","Top 3 từ khóa"],["50%","Tăng trưởng 6 tháng"]]}
+const $=id=>document.getElementById(id);
+const skills=[["Viết nội dung chuẩn SEO","Đã làm dự án",""],["Nghiên cứu từ khóa (Ahrefs, Google Keyword Planner)","Đã dùng",""],["Google Search Console &amp; GA4","Đã dùng",""],["Technical SEO cơ bản","Đang học","l1"],["Canva, CapCut","Khá tốt",""],["Tiếng Anh (IELTS 6.5)","Đọc tài liệu tốt",""]];
+$('skills').innerHTML=skills.map(s=>`<div class="skill"><span>${s[0]}</span><span class="lv ${s[2]}">${s[1]}</span></div>`).join('');
+const projects=[
+ {t:"Blog cá nhân",y:"Dự án tự làm · 2025",c:"Tự lập blog 20 bài về du lịch bụi để thực hành SEO từ đầu.",d:"Nghiên cứu từ khóa, viết bài, tối ưu tiêu đề và gắn liên kết nội bộ.",r:"Sau 5 tháng có 1,200 lượt xem/tháng, 6 từ khóa vào top 10. Mình học được cách chọn từ khóa dễ trước."},
+ {t:"Audit website một quán cà phê",y:"Bài tập môn học · 2026",c:"Phân tích website cho một quán cà phê địa phương trong nhóm 4 người.",d:"Mình phụ trách phần kiểm tra tốc độ và tiêu đề, đề xuất sửa 12 lỗi.",r:"Đạt 9/10 điểm. Chủ quán đã áp dụng 5 đề xuất. Mình học cách trình bày vấn đề dễ hiểu cho người không chuyên."},
+ {t:"Chuỗi bài Facebook cho CLB",y:"Hoạt động CLB · 2025",c:"Quản lý nội dung fanpage CLB Truyền thông trong một học kỳ.",d:"Lên lịch, viết caption, theo dõi chỉ số mỗi tuần.",r:"Reach tăng 35% so với học kỳ trước. Mình học cách đọc số liệu để chọn nội dung phù hợp."}
 ];
-document.getElementById('cases').innerHTML=cases.map(c=>`<article class="card case"><div><div class="meta">${c.m}</div><h3>${c.t}</h3><p>${c.d}</p><a href="#">Đọc case study chi tiết →</a></div><div class="shot">Ảnh chụp báo cáo / biểu đồ</div><div class="kpis">${c.k.map(k=>`<div><strong>${k[0]}</strong><span>${k[1]}</span></div>`).join('')}</div></article>`).join('');
-const steps=[["Root cause, không symptom","Traffic giảm không phải lúc nào do content. Tìm đúng nguyên nhân trước khi hành động."],["Priority matrix, không to-do list","Xếp hạng việc theo impact × effort để tập trung vào thứ mang lại kết quả."],["Semantic depth, không nhồi nhét","Xây dựng Topical Authority thay vì lặp lại keyword."],["Business outcome, không vanity metrics","Đo bằng lead, doanh thu, conversion thay vì chỉ số hiển thị."]];
-document.getElementById('steps').innerHTML=steps.map((s,i)=>`<div class="card"><div class="num">0${i+1}</div><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('');
-const b=document.getElementById('theme'),r=document.documentElement;
-b.onclick=()=>{const d=getComputedStyle(r).getPropertyValue('--bg').trim()==='#14120e';r.dataset.theme=d?'light':'dark'};
+$('projects').innerHTML=projects.map(p=>`<article class="card"><div class="shot">Ảnh minh họa dự án</div><div class="type">${p.y}</div><h3>${p.t}</h3><dl><dt>Bối cảnh</dt><dd>${p.c}</dd><dt>Phần mình làm</dt><dd>${p.d}</dd><dt>Kết quả &amp; bài học</dt><dd>${p.r}</dd></dl><a class="link" href="#">Xem chi tiết dự án</a></article>`).join('');
+const tl=[["2023 – nay","Đại học Kinh tế · Marketing","GPA 3.4/4.0. Các môn nổi bật: Marketing số, Hành vi người tiêu dùng, Nghiên cứu thị trường."],["09/2025 – 05/2026","Thành viên CLB Truyền thông","Phụ trách viết bài và quản lý fanpage, tham gia tổ chức 2 sự kiện cho sinh viên."],["06/2025","Chứng chỉ Fundamentals of Digital Marketing (Google)","Hoàn thành khóa học trực tuyến 40 giờ."],["2025","Top 10 cuộc thi SEO sinh viên","Thi nhóm 3 người, mình phụ trách phần nghiên cứu từ khóa."]];
+$('timeline').innerHTML=tl.map(t=>`<div><div class="d">${t[0]}</div><h3>${t[1]}</h3><p>${t[2]}</p></div>`).join('');
+const learn=[["Technical SEO",60,"Khóa học trên Google Search Central và thực hành với blog của mình."],["Google Analytics 4",50,"Đang luyện báo cáo trên Looker Studio."],["Viết nội dung bằng AI có kiểm duyệt",40,"Học cách dùng AI để lên dàn ý và vẫn giữ chất lượng bài viết."]];
+$('learn').innerHTML=learn.map(l=>`<div class="card"><h3>${l[0]}</h3><p>${l[2]}</p><div class="bar2" role="img" aria-label="Tiến độ ${l[1]}%"><i style="width:${l[1]}%"></i></div></div>`).join('');
+const r=document.documentElement;
+$('theme').onclick=()=>{const dark=getComputedStyle(r).getPropertyValue('--bg').trim()==='#0e1715';r.dataset.theme=dark?'light':'dark'};
 </script>
 </body>
 </html>
